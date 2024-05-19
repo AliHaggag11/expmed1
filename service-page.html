@@ -29,8 +29,173 @@
     font-family: 'Poppins', sans-serif !important; /* Apply Poppins font */
     font-size: 14px;
     padding: 0 15px;
+
+}
+.subtext{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .blue-text {
+    color: #124787;
+}
+.ezy__service16 {
+	/* Bootstrap variables */
+	--bs-body-color: #252d39;
+	--bs-body-bg: rgb(255, 255, 255);
+
+	/* Easy Frontend variables */
+	--ezy-theme-color: rgb(13, 110, 253);
+	--ezy-theme-color-rgb: 13, 110, 253;
+	--ezy-item-color: #23262F;
+	--ezy-item-bg: #ffffff;
+	--ezy-item-shadow: 0 4px 140px rgba(231, 231, 234, 0.66);
+	--ezy-item-icon-bg: #ffffff;
+	--ezy-item-icon-shodow: 0 4px 34px 0 rgba(163, 190, 241, 0.12);
+	--ezy-item-border-color: rgba(0, 0, 0, 0.06);
+
+	background-color: var(--bs-body-bg);
+	overflow: hidden;
+	padding: 60px 0;
 }
 
+@media (min-width: 768px) {
+	.ezy__service16 {
+		padding: 100px 0;
+	}
+}
+
+/* Gray Block Style */
+.gray .ezy__service16,
+.ezy__service16.gray {
+	/* Bootstrap variables */
+	--bs-body-bg: rgb(246, 246, 246);
+
+	/* Easy Frontend variables */
+	--ezy-item-color: #32343d;
+	--ezy-item-bg: rgb(246, 246, 246);
+	--ezy-item-shadow: 0 4px 140px rgba(231, 231, 234, 1);
+	--ezy-item-icon-bg: #fff;
+	--ezy-item-border-color: rgba(18, 18, 18, 0.06);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__service16,
+.ezy__service16.dark-gray {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(30, 39, 53);
+
+	/* Easy Frontend variables */
+	--ezy-item-color: #d2d2d2;
+	--ezy-item-bg: rgb(30, 39, 53);
+	--ezy-item-shadow: 0 4px 140px #101c2d;
+	--ezy-item-icon-bg: #101c2d;
+	--ezy-item-icon-shodow: 0 7px 34px 0px rgba(0, 0, 0, .25);
+	--ezy-item-border-color: #101c2d;
+}
+
+/* Dark Block Style */
+.dark .ezy__service16,
+.ezy__service16.dark {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(11, 23, 39);
+
+	/* Easy Frontend variables */
+	--ezy-item-color: #BFC0C2;
+	--ezy-item-bg: rgb(11, 23, 39);
+	--ezy-item-shadow: 0 4px 140px #0B1727;
+	--ezy-item-icon-bg: #0B1727;
+	--ezy-item-icon-shodow: 0 7px 27px 0px rgb(16, 0, 56);
+	--ezy-item-border-color: #0b1727;
+}
+
+.ezy__service16-heading {
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 25px;
+	color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+	.ezy__service16-heading {
+		font-size: 45px;
+		line-height: 45px;
+	}
+}
+
+.ezy__service16-sub-heading {
+	font-size: 20px;
+	line-height: 25px;
+	color: var(--bs-body-color);
+	opacity: .7;
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	.ezy__service16-list [class*="col-"] {
+		border-bottom: 1px solid var(--ezy-item-border-color);
+		border-left: 1px solid var(--ezy-item-border-color);
+	}
+
+	.ezy__service16-list [class*="col-"]:nth-child(2n + 1) {
+		border-left-color: transparent;
+	}
+
+	.ezy__service16-list [class*="col-"]:nth-last-child(-n + 2) {
+		border-bottom-color: transparent;
+	}
+}
+
+@media (min-width: 767px) {
+	.ezy__service16-list [class*="col-"] {
+		border-bottom: 1px solid var(--ezy-item-border-color);
+		border-left: 1px solid var(--ezy-item-border-color);
+	}
+
+	.ezy__service16-list [class*="col-"]:nth-child(3n + 1) {
+		border-left-color: transparent;
+	}
+
+	.ezy__service16-list [class*="col-"]:nth-last-child(-n + 3) {
+		border-bottom-color: transparent;
+	}
+}
+
+.ezy__service16-icon {
+	background-color: var(--ezy-item-icon-bg);
+	box-shadow: var(--ezy-item-icon-shodow);
+	color: var(--ezy-theme-color);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	font-size: 32px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ezy__service16-title {
+	color: var(--bs-body-color);
+}
+
+.ezy__service16-content {
+	color: var(--bs-body-color);
+	opacity: .8;
+}
+
+.ezy__service16-item {
+	background-color: var(--ezy-item-bg);
+	border-radius: 0;
+	height: 100%;
+	transition: box-shadow .3s ease-in-out;
+	position: relative;
+}
+
+.ezy__service16-item:hover,
+.ezy__service16-item.active {
+	box-shadow: var(--ezy-item-shadow);
+	z-index: 1;
+}
     </style>
 </head>
 
@@ -64,83 +229,195 @@
                 </div>
             </div>
         </nav>
-        <section class="clean-block clean-hero" style="background-image: url(&quot;assets/img/landing/beautiful-young-female-doctor-looking-camera-office%202.png&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;color: rgba(24,76,132,0.66);height: 5vh;min-height: 50vh !important;">
-            <div class="container text-center text">
-                <h1 class="text-uppercase">our services</h1>
-            </div>
-        </section>
-        </div>
-        </section>
-        <section class="projects-horizontal">
-            <div class="container col-md-10">
-                <div class="intro"></div>
-                <section id="features-3" class="py-5" style="align-items: center;/*center: center;*/text-align: center;">
-                    <div class="container py-3">
-                        <div class="row g-4">
-                            <div class="col-lg-4 align-self-center">
-                                <div class="row g-4">
-                                    <div class="col-lg-12 text-lg-end text-xl-end text-xxl-end flex-column" style="font-size: 56px;text-align: center !important;"><i class="fas fa-globe-africa bg-light border rounded-circle border-light" data-bss-hover-animate="pulse" style="color: #184c84;padding: 2vh;width: 10vh;height: 10vh;"></i>
-                                        <h6 class="text-uppercase">Understand the<br>needs of supplier &amp;&nbsp;<br>customer</h6>
-                                    </div>
-                                    <div class="col-lg-12 text-lg-end text-xl-end text-xxl-end flex-column" style="font-size: 56px;text-align: center !important;"><i class="fas fa-hands-helping bg-light border rounded-circle border-light" data-bss-hover-animate="pulse" style="color: #184c84;padding: 2vh;width: 11vh;height: 11vh;"></i>
-                                        <h6 class="text-uppercase">proper G2M Model<br>&amp; Right Team on the <br>ground</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 align-self-center"><img class="img-fluid rounded" src="assets/img/landing/Excellence.png" alt="bssblocks image placeholder" width="100%" style="/*<svg viewBox=&quot;0 0 200 200&quot; xmlns=&quot;http: //www.w3.org/2000/svg&quot;> <path fill=&quot;#FF0066&quot; d=&quot;M14.2,-21.2C21.4,-10.8,32.3,-9.2,42.4,-0.4C52.4,8.5,61.5,24.6,57.4,34.5C53.3,44.3,36,47.8,24.2,41.3C12.3,34.7,5.9,18.1,-10.2,17C-26.3,15.9,-52.1,30.4,-66.1,27.7C-80.1,25,-82.4,5,-78.8,-13.6C-75.2,-32.3,-65.7,-49.6,-51.5,-58.7C-37.4,-67.9,-18.7,-68.9,-7.6,-59.8C3.5,-50.8,6.9,-31.6,14.2,-21.2Z&quot; transform=&quot;translate(100 100)&quot; /> </svg>;*/"></div>
-                            <div
-                                class="col-lg-4 align-self-center">
-                                <div class="row g-4">
-                                    <div class="col-lg-12 text-lg-end text-xl-end text-xxl-end flex-column" style="font-size: 56px;text-align: center !important;"><i class="fas fa-screwdriver bg-light border rounded-circle border-light" data-bss-hover-animate="pulse" style="color: #184c84;padding: 2vh;"></i>
-                                        <h6 class="text-uppercase">best pre &amp; after sale<br> in market &amp; remote <br>service</h6>
-                                    </div>
-                                    <div class="col-lg-12 text-lg-end text-xl-end text-xxl-end flex-column" style="font-size: 56px;text-align: center !important;"><i class="fas fa-coins bg-light border rounded-circle border-light" data-bss-hover-animate="pulse" style="color: #184c84;padding: 2vh;"></i>
-                                        <h6 class="text-uppercase">proper financial <br>models to fit<br> the business</h6>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 text-lg-end text-xl-end text-xxl-end flex-column" style="font-size: 56px;text-align: center !important;"><i class="fas fa-puzzle-piece bg-light border rounded-circle border-light" data-bss-hover-animate="pulse" style="color: #184c84;padding: 2vh;width: 11vh;height: 11vh;"></i>
-                        <h6 class="text-uppercase">wide knowledge of <br>portfolio &amp; Solutions</h6>
-                    </div>
-            </div>
-            </section>
-    </main>
-    <footer class="page-footer dark" style="border-color: rgb(24,76,132);background: #184c84;">
-        <div class="container">
-            <div class="row row-cols-1 d-flex justify-content-center align-items-center">
-                <div class="col col-md-2"><img class="img-fluid d-flex justify-content-start" src="assets/img/landing/logo_big2.png" style="width: 20vh;">
-                    <div style="text-align: left;padding-left: 3vw;"><img src="assets/img/avatars/noun-arrow-1822328-05.png"><img src="assets/img/avatars/noun-arrow-1822328-06.png"><img src="assets/img/avatars/noun-arrow-1822328-03.png"></div>
-                </div>
-                <div class="col col-md-6" style="padding-right: 6px;padding-left: 6px;">
-                    <div style="margin-top: 3vh;text-align: left;"><i class="fas fa-phone-alt" style="font-size: 2\vh;color: rgb(255,255,255);padding: 1vh;"></i><span style="color: rgb(255,255,255);font-size: 2vh;">+971 52 2500 710</span></div>
-                    <div style="text-align: left;"><i class="material-icons" style="font-size: 2vh;color: rgb(255,255,255);padding: 1vh;">email</i><span style="color: rgb(255,255,255);font-size: 2vh;">hossam.wahby@expertsmed.net</span></div>
-                    <div style="text-align: left;"><i class="fas fa-map-marked" style="font-size: 2.5vh;color: rgb(255,255,255);padding: 1vh;"></i><span class="text-break" style="color: rgb(255,255,255);font-size: 1.75vh;">Office 101-A9, AlGarhoud, Nasser Ahmed Saeed AlAwadhi Building, Deira, Dubai, UAE</span></div>
-                </div>
-                <div class="col-auto d-flex">
-                    <section class="newsletter-subscribe" style="background: rgba(255,255,255,0);padding-bottom: 0;padding-top: 0;">
-                        <div class="container" style="font-family: Poppins, sans-serif;padding: 0;">
-                            <div class="intro"></div>
-                            <form class="d-flex justify-content-center flex-wrap">
-                                <div></div>
-                            </form>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright" style="background: #184c84;border-style: none; font-size: 10px;">
-            <p>All Rights Reserved. Experts Med © 2024</p>
-        </div>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="assets/js/script.min.js"></script>
-</body>
 
-</html>
+    <div style="margin: 50px;">    
+            <section class="ezy__service16">
+                <div class="container">
+                   
+                    <div class="row justify-content-center mb-4 mb-md-5">
+                        <div class="col-lg-6 text-center">
+                            <h2 class="ezy__service16-heading mb-4 subtext blue-text">Strategic &amp; Financial Management</h2>
+                            <p class="ezy__service16-sub-heading mb-0 subtext mt-3" style="margin-bottom: 70px;">ExpertsMed provides strategic financial management, which goes beyond mere number
+                                crunching. We help shape and guide our clients and partners financial strategy, in alignment
+                                with their overall vision and goals. This involves understanding market dynamics, competitive
+                                positioning, and long-term objectives. 
+                                We also provide advice on financial analysis and reporting, cashflow management and
+                                optimization, budgeting and forecasting, and helping to enhance profitability and efficiency.</p>
+                        </div>
+                    <div class="row ezy__service16-list m-0">
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-yin-yang"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Sales &amp; Operations Services</h4>
+                                <p class="ezy__service16-content mb-0">ExpertsMed help our clients and partners focus on core competencies, reduce overhead costs,
+                                    and accelerate growth. We manage every aspect of sales, from lead generation to identifying
+                                    growth opportunities.  We bring a wealth of specialized sales expertise and industry insight to a
+                                    company.  We can analyze and enhance your sales strategy, implement effective management.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-vest"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Strategic &amp; Financial Management</h4>
+                                <p class="ezy__service16-content mb-0">ExpertsMed provides strategic financial management, which goes beyond mere number
+                                    crunching. We help shape and guide our clients and partners financial strategy, in alignment
+                                    with their overall vision and goals. This involves understanding market dynamics, competitive
+                                    positioning, and long-term objectives. 
+                                    We also provide advice on financial analysis and reporting, cashflow management and
+                                    optimization, budgeting and forecasting, and helping to enhance profitability and efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-paper-plane"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Distributors Network Management</h4>
+                                <p class="ezy__service16-content mb-0">ExpertsMed business development team plans and executes 360-degree distributor
+                                    management processes to achieve clients’ objectives, including hiring and human resources,
+                                    annual &amp; quarterly budget development and tracking, forecasting, and orders operation. In
+                                    addition, the ExpertsMed team works with distributors and suppliers/manufacturers to manage
+                                    every aspect of distribution from warehouse to point-of-sale, including inventory, warehousing,
+                                    supply chain, and logistics.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-random"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Regulatory Affairs</h4>
+                                <p class="ezy__service16-content mb-0">At ExpertsMed, our team knows how to navigate the complex regulatory landscape of all the
+                                    markets we serve. We have in-depth knowledge of global regulations, and can help with getting
+                                    your products to market with efficiency and ease.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-cannabis"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3"> Medical Affairs/Market Access</h4>
+                                <p class="ezy__service16-content mb-0">ExpertsMed provides solutions for product commercialization in emerging markets that enable
+                                    greater chances of successful formulary inclusion, key opinion leader (KOL) support, and
+                                    interaction with key stakeholders. We can provide comprehensive and holistic health economic
+                                    market access &amp; reimbursement solution.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-camera"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Marketing</h4>
+                                <p class="ezy__service16-content mb-0">ExpertsMed provides strategic marketing and communications services designed to attract
+                                    patients, healthcare professionals and key opinion leaders and keep them engaged with services
+                                    and products. We integrate multi-channel, highly-targeted, and specific online/offline collateral
+                                    to drive growth, engagement, and return-on-investment.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-random"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Technical Services</h4>
+                                <p class="ezy__service16-content mb-0">ExpertsMed provides a variety of technical services, including: fleet management ; spare parts;
+                                    technical service support ; and service management. These services ensure your medical
+                                    equipment operates at the highest level of safety, reliability , and cost effectiveness.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-cannabis"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Ethics, Compliance &amp; Legal</h4>
+                                <p class="ezy__service16-content mb-0">For companies seeking to expand into emerging markets, there are often significant concerns
+                                    about rule of law, corruption, lack of or confusing regulation, and underdeveloped institutional
+                                    frameworks. The ExpertsMed team are drawn from multinational corporations, and are strongly
+                                    schooled in and committed to effective corporate governance, adherence to the law, and a high
+                                    standard of ethics and compliance that ensures companies are protected by mitigating/reducing
+                                    risk and improving compliance in emerging markets.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 p-0">
+                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                                <div class="ezy__service16-icon mb-4"><i class="fas fa-camera"></i></div>
+                                <h4 class="ezy__service16-title fs-4 mb-3">Healthcare Software-As-A-Service</h4>
+                                <p class="ezy__service16-content mb-0">
+                                    ■ Virtual reality implementation &amp; training <br>
+                                    ■ Software in a Medical Device (SiMD) <br>
+                                    ■ Technical services <br>
+                                </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-sm-6 col-md-4 p-0">
+                      
+                    </div>
+                </div>
+                <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
+                    <div class="ezy__service16-icon mb-4"><i class="fas fa-camera"></i></div>
+                    <h4 class="ezy__service16-title fs-4 mb-3">Commercial Training, Clinical Education, &amp; Organisational Development</h4>
+                    <p class="ezy__service16-content mb-0">ExpertsMed offers commercial training, clinical education and organizational development for
+                        healthcare professionals. Among the services offered are: <br>
+                        ■ Commercial Training Programs: <br>
+                        - Consultative Selling (SPIN) <br>
+                        - Insight led Selling (Challenger) <br>
+                        - Account Management <br>
+                        - Digital Sales <br>
+                        - Multichannel approach <br>
+                        ■ Health Care Professionals Continuing Clinical Education <br> 
+                        - Train the Trainer <br>
+                        - Digital Health <br>
+                        ■ Talent Acquisition and Development Processes and Tools <br>
+                        - Assessment Centre <br>
+                        - Interview process <br>
+                        - Psychometric assessments <br>
+                        ■ Team Development <br>
+                        - Team Branding  <br>
+                        - Team Coaching <br>
+                        - Team Build events <br>
+                        ■ Leadership and Management Coaching <br>
+                        - GROW Coaching <br>
+                        - Situational Leadership model <br>
+                        - Leading teams so that they notice <br>
+                        - Adaptive leadership <br>
+                        - Change Management <br>
+                        ■ Commercial Excellence <br>
+                        - Sales Enablement training <br>
+                        - Commercial Excellence ROI</p>
+                </div>
+            </section>
+        </div>        
+        <footer class="page-footer dark" style="border-color: rgb(24, 76, 132); background: #184c84;">
+            <div class="container">
+                <div class="row row-cols-1 d-flex justify-content-center align-items-center">
+                    <div class="col col-md-2">
+                        <img class="img-fluid d-flex justify-content-start" src="assets/img/landing/logo_big2.png" style="width: 20vh;" />
+                        <div style="text-align: left; padding-left: 3vw;">
+                            <img src="assets/img/avatars/noun-arrow-1822328-05.png" /><img src="assets/img/avatars/noun-arrow-1822328-06.png" /><img src="assets/img/avatars/noun-arrow-1822328-03.png" />
+                        </div>
+                    </div>
+                    <div class="col col-md-6" style="padding-right: 6px; padding-left: 6px;">
+                        <div style="margin-top: 3vh; text-align: left;">
+                            <i class="fas fa-phone-alt" style="font-size: 2\vh; color: rgb(255, 255, 255); padding: 1vh;"></i><span style="color: rgb(255, 255, 255); font-size: 2vh;">+971 52 2500 710</span>
+                        </div>
+                        <div style="text-align: left;">
+                            <i class="material-icons" style="font-size: 2vh; color: rgb(255, 255, 255); padding: 1vh;">email</i><span style="color: rgb(255, 255, 255); font-size: 2vh;">hossam.wahby@expertsmed.net</span>
+                        </div>
+                        <div style="text-align: left;">
+                            <i class="fas fa-map-marked" style="font-size: 2.5vh; color: rgb(255, 255, 255); padding: 1vh;"></i>
+                            <span class="text-break" style="color: rgb(255, 255, 255); font-size: 1.75vh;">Office 101-A9, AlGarhoud, Nasser Ahmed Saeed AlAwadhi Building, Deira, Dubai, UAE</span>
+                        </div>
+                    </div>
+                    <div class="col-auto d-flex">
+                        <section class="newsletter-subscribe" style="background: rgba(255, 255, 255, 0); padding-bottom: 0; padding-top: 0;">
+                            <div class="container" style="font-family: Poppins, sans-serif; padding: 0;">
+                                <div class="intro"></div>
+                                <form class="d-flex justify-content-center flex-wrap"><div></div></form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright" style="background: #184c84; border-style: none; font-size: 10px;"><p>All Rights Reserved. Experts Med © 2024</p></div>
+        </footer>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/smart-forms.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="assets/js/script.min.js"></script>
