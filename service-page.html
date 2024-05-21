@@ -131,74 +131,124 @@
 	opacity: .7;
 }
 
-@media (max-width: 767px) and (min-width: 576px) {
-	.ezy__service16-list [class*="col-"] {
-		border-bottom: 1px solid var(--ezy-item-border-color);
-		border-left: 1px solid var(--ezy-item-border-color);
-	}
 
-	.ezy__service16-list [class*="col-"]:nth-child(2n + 1) {
-		border-left-color: transparent;
-	}
 
-	.ezy__service16-list [class*="col-"]:nth-last-child(-n + 2) {
-		border-bottom-color: transparent;
-	}
-}
-
-@media (min-width: 767px) {
-	.ezy__service16-list [class*="col-"] {
-		border-bottom: 1px solid var(--ezy-item-border-color);
-		border-left: 1px solid var(--ezy-item-border-color);
-	}
-
-	.ezy__service16-list [class*="col-"]:nth-child(3n + 1) {
-		border-left-color: transparent;
-	}
-
-	.ezy__service16-list [class*="col-"]:nth-last-child(-n + 3) {
-		border-bottom-color: transparent;
-	}
-}
-
-.ezy__service16-icon {
-	background-color: var(--ezy-item-icon-bg);
-	box-shadow: var(--ezy-item-icon-shodow);
-	color: var(--ezy-theme-color);
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	font-size: 32px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.ezy__service16-title {
-	color: var(--bs-body-color);
-}
-
-.ezy__service16-content {
-	color: var(--bs-body-color);
-	opacity: .8;
-}
-
-.ezy__service16-item {
-	background-color: var(--ezy-item-bg);
-	border-radius: 0;
-	height: 100%;
-	transition: box-shadow .3s ease-in-out;
-	position: relative;
-}
-
-.ezy__service16-item:hover,
-.ezy__service16-item.active {
-	box-shadow: var(--ezy-item-shadow);
-	z-index: 1;
-}
 .disabled-link {
     pointer-events: none;
     cursor: default;
+}
+
+.ezy__faq12 {
+  /* Bootstrap variables */
+  --bs-body-color: #28303b;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-item-bg: #ffffff;
+  --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+
+  background-color: var(--bs-body-bg);
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .ezy__faq12 {
+    padding: 100px 0;
+  }
+}
+
+/* Gray Block Style */
+.gray .ezy__faq12,
+.ezy__faq12.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__faq12,
+.ezy__faq12.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-item-bg: rgb(11, 23, 39);
+  --ezy-item-shadow: 0px 4px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Block Style */
+.dark .ezy__faq12,
+.ezy__faq12.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-item-bg: rgb(30, 39, 53);
+  --ezy-item-shadow: 0px 4px 22px rgba(0, 0, 0, 0.2);
+}
+
+.ezy__faq12-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+  .ezy__faq12-heading {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.ezy__faq12-sub-heading {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--bs-body-color);
+  opacity: 0.7;
+}
+
+.ezy__faq12-list {
+  background-color: var(--ezy-item-bg);
+  box-shadow: var(--ezy-item-shadow);
+  margin: 0;
+}
+
+.ezy__faq12-item * {
+  color: var(--bs-body-color);
+}
+
+.ezy__faq12-btn-collapse [class*="fa-"] {
+  transition: transform 0.25s ease-in-out;
+}
+
+.ezy__faq12-btn-collapse:focus {
+  box-shadow: none;
+}
+
+.ezy__faq12-btn-collapse.active [class*="fa-"],
+.ezy__faq12-btn-collapse[aria-expanded="true"] [class*="fa-"] {
+  transform: rotate(-180deg);
+}
+
+.ezy__faq12 .border-warning {
+  border-color: var(--ezy-theme-color) !important;
+}
+
+.ezy__faq12 .btn-outline-primary {
+  padding: 11px 35px;
+  border-color: var(--ezy-theme-color);
+  color: var(--ezy-theme-color);
+}
+
+.ezy__faq12 .btn-outline-primary:hover {
+  color: #fff;
+  border-color: var(--ezy-theme-color);
+  background-color: var(--ezy-theme-color);
 }
     </style>
 </head>
@@ -247,180 +297,250 @@
                                 markets, political and economic risks, cultural differences and competition, along with market and
                                 industry trends, that enables us to provide tailored solutions to help you grow your business.</p>
                         </div>
-                    <div class="row ezy__service16-list m-0">
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-yin-yang"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Sales &amp; Operations Services</h4>
-                                <p class="ezy__service16-content mb-0">ExpertsMed help our clients and partners focus on core competencies, reduce overhead costs,
-                                    and accelerate growth. We manage every aspect of sales, from lead generation to identifying
-                                    growth opportunities.  We bring a wealth of specialized sales expertise and industry insight to a
-                                    company.  We can analyze and enhance your sales strategy, implement effective management.</p>
+                        <section class="ezy__faq12">
+                            <div class="container">
+                              <div class="row justify-content-center text-center">
+                                <div class="col-lg-8 mb-5">
+                                  
+                                </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                  <div class="ezy__faq12-list p-4">
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text">Sales & Operations Services</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse  show  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                            ExpertsMed help our clients and partners focus on core competencies, reduce overhead costs, and accelerate growth. We manage every aspect of sales, from lead generation to identifying growth opportunities.  We bring a wealth of specialized sales expertise and industry insight to a company.  We can analyze and enhance your sales strategy, implement effective management.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-2" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text"> Strategic & Financial Management</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-2">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                           
+                                            ExpertsMed provides strategic financial management, which goes beyond mere number crunching. We help shape and guide our clients and partners financial strategy, in alignment with their overall vision and goals. This involves understanding market dynamics, competitive positioning, and long-term objectives.  We also provide advice on financial analysis and reporting, cashflow management and optimization, budgeting and forecasting, and helping to enhance profitability a                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-3" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text">Technical Services</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-3">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                            
+ExpertsMed provides a variety of technical services, including: fleet management ; spare parts; technical service support ; and service management. These services ensure your medical equipment operates at the highest level of safety, reliability , and cost effectiveness.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-4" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text">Distributors Network Management</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-4">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                            
+                                            ExpertsMed business development team plans and executes 360-degree distributor management processes to achieve clients’ objectives, including hiring and human resources, annual & quarterly budget development and tracking, forecasting, and orders operation. In addition, the ExpertsMed team works with distributors and suppliers/manufacturers to manage every aspect of distribution from warehouse to point-of-sale, including inventory, warehousing, supply chain, and logistics.                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-5" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text"> Regulatory Affairs</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-5">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                           
+At ExpertsMed, our team knows how to navigate the complex regulatory landscape of all the markets we serve. We have in-depth knowledge of global regulations, and can help with getting your products to market with efficiency and ease.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-6" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text"> Medical Affairs/Market Access</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-6">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                           
+                                            ExpertsMed provides solutions for product commercialization in emerging markets that enable greater chances of successful formulary inclusion, key opinion leader (KOL) support, and interaction with key stakeholders. We can provide comprehensive and holistic health economic market access & reimbursement solution.                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-7" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text">Marketing</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-7">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                            
+                                            ExpertsMed provides strategic marketing and communications services designed to attract patients, healthcare professionals and key opinion leaders and keep them engaged with services and products. We integrate multi-channel, highly-targeted, and specific online/offline collateral to drive growth, engagement, and return-on-investment.                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-8" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text">Ethics, Compliance & Legal</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-8">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                            Ethics, Compliance & Legal
+                                            For companies seeking to expand into emerging markets, there are often significant concerns about rule of law, corruption, lack of or confusing regulation, and underdeveloped institutional frameworks. The ExpertsMed team are drawn from multinational corporations, and are strongly schooled in and committed to effective corporate governance, adherence to the law, and a high standard of ethics and compliance that ensures companies are protected by mitigating/reducing risk and improving compliance in emerging markets.                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
+                          <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-9" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text"> Healthcare Software-As-A-Service</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-9">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+
+                                           
+                                            ■ Virtual reality implementation & training
+                                            ■ Software in a Medical Device (SiMD)
+                                            ■ Technical services                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="ezy__faq12-item">
+                                      <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-10" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-1">
+                                        <span class="subtext blue-text">Commercial Training, Clinical Education, & Organisational Development</span>
+                                        <span class="fas fa-chevron-down"></span>
+                                      </a>
+                                      <div class="collapse   border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-10">
+                                        <div class="ezy__faq12-content px-4">
+                                          <p class="opacity-50 mb-0 subtext">
+                                            Commercial Training, Clinical Education, & Organisational Development
+                                            ExpertsMed offers commercial training, clinical education and organizational development for healthcare professionals. Among the services offered are:
+                                            ■ Commercial Training Programs: 
+                                            - Consultative Selling (SPIN) 
+                                            - Insight led Selling (Challenger) 
+                                            - Account Management 
+                                            - Digital Sales 
+                                            - Multichannel approach 
+                                            ■ Health Care Professionals Continuing Clinical Education 
+                                              - Train the Trainer 
+                                            - Digital Health 
+                                            ■ Talent Acquisition and Development Processes and Tools 
+                                            - Assessment Centre 
+                                            - Interview process 
+                                            - Psychometric assessments 
+                                            ■ Team Development 
+                                            - Team Branding  
+                                            - Team Coaching 
+                                            - Team Build events 
+                                            ■ Leadership and Management Coaching 
+                                            - GROW Coaching 
+                                            - Situational Leadership model 
+                                            - Leading teams so that they notice 
+                                            - Adaptive leadership 
+                                            - Change Management 
+                                            ■ Commercial Excellence 
+                                            - Sales Enablement training 
+                                            - Commercial Excellence ROI                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-vest"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Strategic &amp; Financial Management</h4>
-                                <p class="ezy__service16-content mb-0">ExpertsMed provides strategic financial management, which goes beyond mere number
-                                    crunching. We help shape and guide our clients and partners financial strategy, in alignment
-                                    with their overall vision and goals. This involves understanding market dynamics, competitive
-                                    positioning, and long-term objectives. 
-                                    We also provide advice on financial analysis and reporting, cashflow management and
-                                    optimization, budgeting and forecasting, and helping to enhance profitability and efficiency.</p>
+                          </section>
+                        </div>        
+                        <footer class="page-footer dark " style="border-color: rgb(24, 76, 132); background: #184c84; width: 100%;">
+                            <div class="container">
+                                <div class="row row-cols-1 d-flex justify-content-center align-items-center">
+                                    <div class="col col-md-2">
+                                        <img class="img-fluid d-flex justify-content-start" src="assets/img/landing/logo_big2.png" style="width: 20vh;" />
+                                        <div style="text-align: left; padding-left: 3vw;">
+                                            <img src="assets/img/avatars/noun-arrow-1822328-05.png" /><img src="assets/img/avatars/noun-arrow-1822328-06.png" /><img src="assets/img/avatars/noun-arrow-1822328-03.png" />
+                                        </div>
+                                    </div>
+                                    <div class="col col-md-6" style="padding-right: 6px; padding-left: 6px;">
+                                        <div style="margin-top: 3vh; text-align: left;">
+                                            <i class="fas fa-phone-alt" style="font-size: 2vh; color: rgb(255, 255, 255); padding: 1vh;"></i><span style="color: rgb(255, 255, 255); font-size: 2vh;">+971 52 2500 710</span>
+                                        </div>
+                                        <div style="text-align: left;">
+                                            <i class="material-icons" style="font-size: 2vh; color: rgb(255, 255, 255); padding: 1vh;">email</i><span style="color: rgb(255, 255, 255); font-size: 2vh;">hossam.wahby@expertsmed.net</span>
+                                        </div>
+                                        <div style="text-align: left;">
+                                            <i class="fas fa-map-marked" style="font-size: 2.5vh; color: rgb(255, 255, 255); padding: 1vh;"></i>
+                                            <span class="text-break" style="color: rgb(255, 255, 255); font-size: 1.75vh;">Office 101-A9, AlGarhoud, Nasser Ahmed Saeed AlAwadhi Building, Deira, Dubai, UAE</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto d-flex">
+                                        <section class="newsletter-subscribe" style="background: rgba(255, 255, 255, 0); padding-bottom: 0; padding-top: 0;">
+                                            <div class="container" style="font-family: Poppins, sans-serif; padding: 0;">
+                                                <div class="intro"></div>
+                                                <form class="d-flex justify-content-center flex-wrap"><div></div></form>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-paper-plane"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Distributors Network Management</h4>
-                                <p class="ezy__service16-content mb-0">ExpertsMed business development team plans and executes 360-degree distributor
-                                    management processes to achieve clients’ objectives, including hiring and human resources,
-                                    annual &amp; quarterly budget development and tracking, forecasting, and orders operation. In
-                                    addition, the ExpertsMed team works with distributors and suppliers/manufacturers to manage
-                                    every aspect of distribution from warehouse to point-of-sale, including inventory, warehousing,
-                                    supply chain, and logistics.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-random"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Regulatory Affairs</h4>
-                                <p class="ezy__service16-content mb-0">At ExpertsMed, our team knows how to navigate the complex regulatory landscape of all the
-                                    markets we serve. We have in-depth knowledge of global regulations, and can help with getting
-                                    your products to market with efficiency and ease.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-cannabis"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3"> Medical Affairs/Market Access</h4>
-                                <p class="ezy__service16-content mb-0">ExpertsMed provides solutions for product commercialization in emerging markets that enable
-                                    greater chances of successful formulary inclusion, key opinion leader (KOL) support, and
-                                    interaction with key stakeholders. We can provide comprehensive and holistic health economic
-                                    market access &amp; reimbursement solution.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-camera"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Marketing</h4>
-                                <p class="ezy__service16-content mb-0">ExpertsMed provides strategic marketing and communications services designed to attract
-                                    patients, healthcare professionals and key opinion leaders and keep them engaged with services
-                                    and products. We integrate multi-channel, highly-targeted, and specific online/offline collateral
-                                    to drive growth, engagement, and return-on-investment.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-random"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Technical Services</h4>
-                                <p class="ezy__service16-content mb-0">ExpertsMed provides a variety of technical services, including: fleet management ; spare parts;
-                                    technical service support ; and service management. These services ensure your medical
-                                    equipment operates at the highest level of safety, reliability , and cost effectiveness.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-cannabis"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Ethics, Compliance &amp; Legal</h4>
-                                <p class="ezy__service16-content mb-0">For companies seeking to expand into emerging markets, there are often significant concerns
-                                    about rule of law, corruption, lack of or confusing regulation, and underdeveloped institutional
-                                    frameworks. The ExpertsMed team are drawn from multinational corporations, and are strongly
-                                    schooled in and committed to effective corporate governance, adherence to the law, and a high
-                                    standard of ethics and compliance that ensures companies are protected by mitigating/reducing
-                                    risk and improving compliance in emerging markets.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 p-0">
-                            <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                                <div class="ezy__service16-icon mb-4"><i class="fas fa-camera"></i></div>
-                                <h4 class="ezy__service16-title fs-4 mb-3">Healthcare Software-As-A-Service</h4>
-                                <p class="ezy__service16-content mb-0">
-                                    ■ Virtual reality implementation &amp; training <br>
-                                    ■ Software in a Medical Device (SiMD) <br>
-                                    ■ Technical services <br>
-                                </p>
-                            </div>
-                        </div>
-                       
-                    </div>
-                    <div class="col-sm-6 col-md-4 p-0">
-                      
-                    </div>
-                </div>
-                <div class="ezy__service16-item p-3 p-md-4 p-xl-5">
-                    <div class="ezy__service16-icon mb-4"><i class="fas fa-camera"></i></div>
-                    <h4 class="ezy__service16-title fs-4 mb-3">Commercial Training, Clinical Education, &amp; Organisational Development</h4>
-                    <p class="ezy__service16-content mb-0">ExpertsMed offers commercial training, clinical education and organizational development for
-                        healthcare professionals. Among the services offered are: <br>
-                        ■ Commercial Training Programs: <br>
-                        - Consultative Selling (SPIN) <br>
-                        - Insight led Selling (Challenger) <br>
-                        - Account Management <br>
-                        - Digital Sales <br>
-                        - Multichannel approach <br>
-                        ■ Health Care Professionals Continuing Clinical Education <br> 
-                        - Train the Trainer <br>
-                        - Digital Health <br>
-                        ■ Talent Acquisition and Development Processes and Tools <br>
-                        - Assessment Centre <br>
-                        - Interview process <br>
-                        - Psychometric assessments <br>
-                        ■ Team Development <br>
-                        - Team Branding  <br>
-                        - Team Coaching <br>
-                        - Team Build events <br>
-                        ■ Leadership and Management Coaching <br>
-                        - GROW Coaching <br>
-                        - Situational Leadership model <br>
-                        - Leading teams so that they notice <br>
-                        - Adaptive leadership <br>
-                        - Change Management <br>
-                        ■ Commercial Excellence <br>
-                        - Sales Enablement training <br>
-                        - Commercial Excellence ROI</p>
-                </div>
-            </section>
-        </div>        
-        <footer class="page-footer dark" style="border-color: rgb(24, 76, 132); background: #184c84;">
-            <div class="container">
-                <div class="row row-cols-1 d-flex justify-content-center align-items-center">
-                    <div class="col col-md-2">
-                        <img class="img-fluid d-flex justify-content-start" src="assets/img/landing/logo_big2.png" style="width: 20vh;" />
-                        <div style="text-align: left; padding-left: 3vw;">
-                            <img src="assets/img/avatars/noun-arrow-1822328-05.png" /><img src="assets/img/avatars/noun-arrow-1822328-06.png" /><img src="assets/img/avatars/noun-arrow-1822328-03.png" />
-                        </div>
-                    </div>
-                    <div class="col col-md-6" style="padding-right: 6px; padding-left: 6px;">
-                        <div style="margin-top: 3vh; text-align: left;">
-                            <i class="fas fa-phone-alt" style="font-size: 2\vh; color: rgb(255, 255, 255); padding: 1vh;"></i><span style="color: rgb(255, 255, 255); font-size: 2vh;">+971 52 2500 710</span>
-                        </div>
-                        <div style="text-align: left;">
-                            <i class="material-icons" style="font-size: 2vh; color: rgb(255, 255, 255); padding: 1vh;">email</i><span style="color: rgb(255, 255, 255); font-size: 2vh;">hossam.wahby@expertsmed.net</span>
-                        </div>
-                        <div style="text-align: left;">
-                            <i class="fas fa-map-marked" style="font-size: 2.5vh; color: rgb(255, 255, 255); padding: 1vh;"></i>
-                            <span class="text-break" style="color: rgb(255, 255, 255); font-size: 1.75vh;">Office 101-A9, AlGarhoud, Nasser Ahmed Saeed AlAwadhi Building, Deira, Dubai, UAE</span>
-                        </div>
-                    </div>
-                    <div class="col-auto d-flex">
-                        <section class="newsletter-subscribe" style="background: rgba(255, 255, 255, 0); padding-bottom: 0; padding-top: 0;">
-                            <div class="container" style="font-family: Poppins, sans-serif; padding: 0;">
-                                <div class="intro"></div>
-                                <form class="d-flex justify-content-center flex-wrap"><div></div></form>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright" style="background: #184c84; border-style: none; font-size: 10px;"><p>All Rights Reserved. Experts Med © 2024</p></div>
-        </footer>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/smart-forms.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-        <script src="assets/js/script.min.js"></script>
+                            <div class="footer-copyright" style="background: #184c84; border-style: none; font-size: 10px;"><p>All Rights Reserved. Experts Med © 2024</p></div>
+                        </footer>
+                        
