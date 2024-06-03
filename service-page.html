@@ -24,239 +24,117 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <style>
-       .navbar-nav .nav-link {
-    color: white !important;
-    font-family: 'Poppins', sans-serif !important; /* Apply Poppins font */
-    font-size: 14px;
-    padding: 0 15px;
+      .navbar-nav .nav-link {
+          color: white !important;
+          font-family: 'Poppins', sans-serif !important;
+          font-size: 14px;
+          padding: 0 15px;
+      }
 
-}
-.subtext{
-        font-family: 'Poppins', sans-serif;
-    }
+      .blue-text {
+          color: #124787;
+      }
 
-    .blue-text {
-    color: #124787;
-}
-.ezy__service16 {
-	/* Bootstrap variables */
-	--bs-body-color: #252d39;
-	--bs-body-bg: rgb(255, 255, 255);
+      .service-page {
+            padding-top: 50px; /* Adjust as needed */
+        }
 
-	/* Easy Frontend variables */
-	--ezy-theme-color: rgb(13, 110, 253);
-	--ezy-theme-color-rgb: 13, 110, 253;
-	--ezy-item-color: #23262F;
-	--ezy-item-bg: #ffffff;
-	--ezy-item-shadow: 0 4px 140px rgba(231, 231, 234, 0.66);
-	--ezy-item-icon-bg: #ffffff;
-	--ezy-item-icon-shodow: 0 4px 34px 0 rgba(163, 190, 241, 0.12);
-	--ezy-item-border-color: rgba(0, 0, 0, 0.06);
+      .subtext {
+          font-family: 'Poppins', sans-serif;
+      }
 
-	background-color: var(--bs-body-bg);
-	overflow: hidden;
-	padding: 60px 0;
-}
+      .ezy__service16-heading {
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 25px;
+          color: #252d39;
+      }
 
-@media (min-width: 768px) {
-	.ezy__service16 {
-		padding: 100px 0;
-	}
-}
+      @media (min-width: 768px) {
+          .ezy__service16-heading {
+              font-size: 45px;
+              line-height: 45px;
+          }
+      }
 
-/* Gray Block Style */
-.gray .ezy__service16,
-.ezy__service16.gray {
-	/* Bootstrap variables */
-	--bs-body-bg: rgb(246, 246, 246);
+      .ezy__service16-sub-heading {
+          font-size: 20px;
+          line-height: 25px;
+          color: #252d39;
+          opacity: .7;
+      }
 
-	/* Easy Frontend variables */
-	--ezy-item-color: #32343d;
-	--ezy-item-bg: rgb(246, 246, 246);
-	--ezy-item-shadow: 0 4px 140px rgba(231, 231, 234, 1);
-	--ezy-item-icon-bg: #fff;
-	--ezy-item-border-color: rgba(18, 18, 18, 0.06);
-}
+      .disabled-link {
+          pointer-events: none;
+          cursor: default;
+      }
 
-/* Dark Gray Block Style */
-.dark-gray .ezy__service16,
-.ezy__service16.dark-gray {
-	/* Bootstrap variables */
-	--bs-body-color: #ffffff;
-	--bs-body-bg: rgb(30, 39, 53);
+      .ezy__faq12-heading {
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 25px;
+          color: #28303b;
+      }
 
-	/* Easy Frontend variables */
-	--ezy-item-color: #d2d2d2;
-	--ezy-item-bg: rgb(30, 39, 53);
-	--ezy-item-shadow: 0 4px 140px #101c2d;
-	--ezy-item-icon-bg: #101c2d;
-	--ezy-item-icon-shodow: 0 7px 34px 0px rgba(0, 0, 0, .25);
-	--ezy-item-border-color: #101c2d;
-}
+      @media (min-width: 768px) {
+          .ezy__faq12-heading {
+              font-size: 45px;
+              line-height: 45px;
+          }
+      }
 
-/* Dark Block Style */
-.dark .ezy__service16,
-.ezy__service16.dark {
-	/* Bootstrap variables */
-	--bs-body-color: #ffffff;
-	--bs-body-bg: rgb(11, 23, 39);
+      .ezy__faq12-sub-heading {
+          font-size: 18px;
+          line-height: 30px;
+          color: #28303b;
+          opacity: 0.7;
+      }
 
-	/* Easy Frontend variables */
-	--ezy-item-color: #BFC0C2;
-	--ezy-item-bg: rgb(11, 23, 39);
-	--ezy-item-shadow: 0 4px 140px #0B1727;
-	--ezy-item-icon-bg: #0B1727;
-	--ezy-item-icon-shodow: 0 7px 27px 0px rgb(16, 0, 56);
-	--ezy-item-border-color: #0b1727;
-}
+      .ezy__faq12-list {
+          background-color: #ffffff;
+          box-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
+          margin: 0;
+      }
 
-.ezy__service16-heading {
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 25px;
-	color: var(--bs-body-color);
-}
+      .ezy__faq12-item * {
+          color: #28303b;
+      }
 
-@media (min-width: 768px) {
-	.ezy__service16-heading {
-		font-size: 45px;
-		line-height: 45px;
-	}
-}
+      .ezy__faq12-btn-collapse [class*="fa-"] {
+          transition: transform 0.25s ease-in-out;
+      }
 
-.ezy__service16-sub-heading {
-	font-size: 20px;
-	line-height: 25px;
-	color: var(--bs-body-color);
-	opacity: .7;
-}
+      .ezy__faq12-btn-collapse:focus {
+          box-shadow: none;
+      }
 
+      .ezy__faq12-btn-collapse.active [class*="fa-"],
+      .ezy__faq12-btn-collapse[aria-expanded="true"] [class*="fa-"] {
+          transform: rotate(-180deg);
+      }
 
+      .ezy__faq12 .border-warning {
+          border-color: #0d6efd !important;
+      }
 
-.disabled-link {
-    pointer-events: none;
-    cursor: default;
-}
+      .ezy__faq12 .btn-outline-primary {
+          padding: 11px 35px;
+          border-color: #0d6efd;
+          color: #0d6efd;
+      }
 
-.ezy__faq12 {
-  /* Bootstrap variables */
-  --bs-body-color: #28303b;
-  --bs-body-bg: rgb(255, 255, 255);
-
-  /* Easy Frontend variables */
-  --ezy-theme-color: rgb(13, 110, 253);
-  --ezy-theme-color-rgb: 13, 110, 253;
-  --ezy-item-bg: #ffffff;
-  --ezy-item-shadow: 0px 4px 44px rgba(159, 190, 218, 0.37);
-
-  background-color: var(--bs-body-bg);
-  overflow: hidden;
-  padding: 60px 0;
-}
-
-@media (min-width: 768px) {
-  .ezy__faq12 {
-    padding: 100px 0;
-  }
-}
-
-/* Gray Block Style */
-.gray .ezy__faq12,
-.ezy__faq12.gray {
-  /* Bootstrap variables */
-  --bs-body-bg: rgb(246, 246, 246);
-}
-
-/* Dark Gray Block Style */
-.dark-gray .ezy__faq12,
-.ezy__faq12.dark-gray {
-  /* Bootstrap variables */
-  --bs-body-color: #ffffff;
-  --bs-body-bg: rgb(30, 39, 53);
-
-  /* Easy Frontend variables */
-  --ezy-item-bg: rgb(11, 23, 39);
-  --ezy-item-shadow: 0px 4px 22px rgba(0, 0, 0, 0.2);
-}
-
-/* Dark Block Style */
-.dark .ezy__faq12,
-.ezy__faq12.dark {
-  /* Bootstrap variables */
-  --bs-body-color: #ffffff;
-  --bs-body-bg: rgb(11, 23, 39);
-
-  /* Easy Frontend variables */
-  --ezy-item-bg: rgb(30, 39, 53);
-  --ezy-item-shadow: 0px 4px 22px rgba(0, 0, 0, 0.2);
-}
-
-.ezy__faq12-heading {
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 25px;
-  color: var(--bs-body-color);
-}
-
-@media (min-width: 768px) {
-  .ezy__faq12-heading {
-    font-size: 45px;
-    line-height: 45px;
-  }
-}
-
-.ezy__faq12-sub-heading {
-  font-size: 18px;
-  line-height: 30px;
-  color: var(--bs-body-color);
-  opacity: 0.7;
-}
-
-.ezy__faq12-list {
-  background-color: var(--ezy-item-bg);
-  box-shadow: var(--ezy-item-shadow);
-  margin: 0;
-}
-
-.ezy__faq12-item * {
-  color: var(--bs-body-color);
-}
-
-.ezy__faq12-btn-collapse [class*="fa-"] {
-  transition: transform 0.25s ease-in-out;
-}
-
-.ezy__faq12-btn-collapse:focus {
-  box-shadow: none;
-}
-
-.ezy__faq12-btn-collapse.active [class*="fa-"],
-.ezy__faq12-btn-collapse[aria-expanded="true"] [class*="fa-"] {
-  transform: rotate(-180deg);
-}
-
-.ezy__faq12 .border-warning {
-  border-color: var(--ezy-theme-color) !important;
-}
-
-.ezy__faq12 .btn-outline-primary {
-  padding: 11px 35px;
-  border-color: var(--ezy-theme-color);
-  color: var(--ezy-theme-color);
-}
-
-.ezy__faq12 .btn-outline-primary:hover {
-  color: #fff;
-  border-color: var(--ezy-theme-color);
-  background-color: var(--ezy-theme-color);
-}
-    </style>
+      .ezy__faq12 .btn-outline-primary:hover {
+          color: #fff;
+          border-color: #0d6efd;
+          background-color: #0d6efd;
+      }
+  </style>
 </head>
 
 <body>
     <main class="page service-page">
 
-        <nav class="navbar navbar-light navbar-expand-lg" id="mainNav" style="background: #10427e;">
+        <nav class="navbar navbar-light navbar-expand-lg mb-10 pb-10" id="mainNav" style="background: #10427e;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="assets/img/landing/logo_big2.png" style="width: 10vh; margin-left: 10px;" /></a>
                 <button
@@ -276,26 +154,25 @@
                         <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
                         <li class="nav-item"><a class="nav-link" href="service-page.html">SERVICES</a></li>
                         <li class="nav-item"><a class="nav-link" href="region.html">REGIONWIDE EXPERTISE</a></li>
-                        <li class="nav-item"><a class="nav-link disabled-link" href="insights.html">INSIGHTS</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link disabled-link" href="insights.html">INSIGHTS</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="contact-us.html">CONTACT US</a></li>
-                        <li class="nav-item"><a class="nav-link disabled-link" href="careers.html">CAREERS</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link disabled-link" href="careers.html">CAREERS</a></li> -->
                     </ul>
                 </div>
             </div>
         </nav>
 
-    <div style="margin: 50px;">    
+    <div class="service-page">    
             <section class="ezy__service16">
                 <div class="container">
                    
-                    <div class="row justify-content-center mb-4 mb-md-5">
+                    <div class="row justify-content-center mb-4 mb-md-5 mt-9 pt-10">
                         <div class="col-lg-6 text-center">
-                            <h2 class="ezy__service16-heading mb-4 subtext blue-text">Our Services</h2>
-                            <p class="ezy__service16-sub-heading mb-0 subtext mt-3" style="margin-bottom: 70px;">ExpertsMed provides strategic financial management, which goes beyond mere number
-                                We offer a wide range of services to assist healthcare companies navigate the complex emerging market
-                                landscape. We understand the legal and regulatory environments of both mature and developing
-                                markets, political and economic risks, cultural differences and competition, along with market and
-                                industry trends, that enables us to provide tailored solutions to help you grow your business.</p>
+                            <h2 class="ezy__service16-heading mb-4 subtext blue-text pt-10 mt-10 class="text-break text-uppercase text-info" data-aos="zoom-in" data-aos-delay="200" style="font-weight: bold; font-family: Poppins, sans-serif; font-size: 6vh; color: #184c84 !important; margin-bottom: 0px;">Our Services</h2>
+                            <p class="ezy__service16-sub-heading mb-0 subtext mt-3" style="margin-bottom: 70px;">We offer a wide range of services to assist healthcare companies navigate the complex emerging market
+                              landscape. We understand the legal and regulatory environments of both mature and developing
+                              markets, political and economic risks, cultural differences and competition, along with market and
+                              industry trends, that enables us to provide tailored solutions to help you grow your business.</p>
                         </div>
                         <section class="ezy__faq12">
                             <div class="container">
@@ -326,12 +203,12 @@
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-2" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-2">
                                         <span class="subtext blue-text"> Strategic & Financial Management</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-2">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                            
@@ -343,12 +220,12 @@
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-3" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-3">
                                         <span class="subtext blue-text">Technical Services</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-3">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                             
@@ -361,12 +238,12 @@ ExpertsMed provides a variety of technical services, including: fleet management
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-4" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-4">
                                         <span class="subtext blue-text">Distributors Network Management</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-4">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                             
@@ -378,12 +255,12 @@ ExpertsMed provides a variety of technical services, including: fleet management
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-5" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-5">
                                         <span class="subtext blue-text"> Regulatory Affairs</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-5">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                            
@@ -396,12 +273,12 @@ At ExpertsMed, our team knows how to navigate the complex regulatory landscape o
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-6" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-6">
                                         <span class="subtext blue-text"> Medical Affairs/Market Access</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-6">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                            
@@ -413,12 +290,12 @@ At ExpertsMed, our team knows how to navigate the complex regulatory landscape o
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-7" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-7">
                                         <span class="subtext blue-text">Marketing</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-7">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                             
@@ -430,12 +307,12 @@ At ExpertsMed, our team knows how to navigate the complex regulatory landscape o
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-2" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-8" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-8">
                                         <span class="subtext blue-text">Ethics, Compliance & Legal</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-8">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                             Ethics, Compliance & Legal
@@ -447,42 +324,20 @@ At ExpertsMed, our team knows how to navigate the complex regulatory landscape o
                           
                                     <div class="ezy__faq12-item">
                                       <a class="btn px-0 py-3 w-100 text-start d-flex justify-content-between align-items-center ezy__faq12-btn-collapse"
-                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-1" role="button" aria-expanded="true"
-                                        aria-controls="ezy-faq12-collapse-1">
+                                        data-bs-toggle="collapse" href="#ezy-faq12-collapse-9" role="button" aria-expanded="true"
+                                        aria-controls="ezy-faq12-collapse-9">
                                         <span class="subtext blue-text">Commercial Training, Clinical Education, & Organisational Development</span>
                                         <span class="fas fa-chevron-down"></span>
                                       </a>
-                                      <div class="collapse show border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-1">
+                                      <div class="collapse  border-start border-3 border-warning mb-3" id="ezy-faq12-collapse-9">
                                         <div class="ezy__faq12-content px-4">
                                           <p class="opacity-50 mb-0 subtext">
                                             Commercial Training, Clinical Education, & Organisational Development
-                                            ExpertsMed offers commercial training, clinical education and organizational development for healthcare professionals. Among the services offered are:
-                                            ■ Commercial Training Programs: 
-                                            - Consultative Selling (SPIN) 
-                                            - Insight led Selling (Challenger) 
-                                            - Account Management 
-                                            - Digital Sales 
-                                            - Multichannel approach 
-                                            ■ Health Care Professionals Continuing Clinical Education 
-                                              - Train the Trainer 
-                                            - Digital Health 
-                                            ■ Talent Acquisition and Development Processes and Tools 
-                                            - Assessment Centre 
-                                            - Interview process 
-                                            - Psychometric assessments 
-                                            ■ Team Development 
-                                            - Team Branding  
-                                            - Team Coaching 
-                                            - Team Build events 
-                                            ■ Leadership and Management Coaching 
-                                            - GROW Coaching 
-                                            - Situational Leadership model 
-                                            - Leading teams so that they notice 
-                                            - Adaptive leadership 
-                                            - Change Management 
-                                            ■ Commercial Excellence 
-                                            - Sales Enablement training 
-                                            - Commercial Excellence ROI                                          </p>
+                                            ExpertsMed offers commercial training, clinical education and organizational development for healthcare professionals. Among the services offered are: <br>
+                                            Commercial Training Programs, Health Care Professionals Continuing Clinical Education, 
+                                            Talent Acquisition and Development Processes and Tools, Team Development, Leadership and Management Coaching &
+                                            Commercial Excellence 
+                                          </p>
                                         </div>
                                       </div>
                                     </div>
